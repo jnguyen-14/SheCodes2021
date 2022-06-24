@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crepes</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #ffffff;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #faffca;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .learn-more {
+        color: #7d51e8;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .Background {
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #f35ba7 0%, #5e61fd 100%);
+        border-radius: 10px;
+        color: #fff;
+        width: 50%;
+        padding: 30px;
+        margin: 30px auto;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Background">
+      <h1>♡ Crêpes ♡</h1>
+      <h2>A crêpe, often known as a crepe, is a thin pancake.</h2>
+      <img
+        src="https://www.chelseasmessyapron.com/wp-content/uploads/2014/01/Nutella-Crepes-1.jpg"
+        alt="Nutella Crepes"
+      />
+      <p>
+        Crepe cakes can be constructed by layering ordinary crepes on top of
+        each other and putting a layer of cream between the two layers. Fruits,
+        chocolate, pastries, and other edibles can be included. The majority of
+        crêpe cake is sweet, and it is often served as a dessert. It can also
+        serve as a substitute for the conventional birthday cake. Crêpe cakes
+        typically have 15 to 30 layers, with very thin and soft crêpes.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Cr%C3%AApe"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="buy-button">Buy Jennie's homemade crepes</button>
+      <p class="footer">This page was built by Jennie Nguyen</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite emoji?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email, meanwhile make some crepes! " +
+            emoji
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
